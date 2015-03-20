@@ -1,0 +1,33 @@
+[
+	{ "keys": ["ctrl+e"], "command": "find_under_expand" },
+	{ "keys": ["ctrl+k", "ctrl+e"], "command": "find_under_expand_skip" },
+	{ "keys": ["ctrl+d"], "command": "run_macro_file", "args": {"file": "Packages/Default/Delete Line.sublime-macro"} },
+	{ "keys": ["f5"], "command": "revert" },
+	{ "keys": ["ctrl+shift+w"], "command": "close_all" },
+	{
+		"keys": ["alt+shift+1"],
+		"command": "set_layout",
+		"args":
+		{
+			"cols": [0.0, 1.0],
+			"rows": [0.0, 1.0],
+			"cells": [[0, 0, 1, 1]]
+		}
+	},
+	{
+		/**
+		* Emulate Emacs' M-!
+		*/
+
+		"keys": ["ctrl+\\"],
+		"command": "shell_command"
+	},
+	{
+		/**
+		* Emulate Emacs' M-|
+		*/
+
+		"keys": ["ctrl+shift+\\"],
+		"command": "shell_command_on_region"
+	}
+]
